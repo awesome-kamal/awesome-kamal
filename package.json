@@ -1,0 +1,10 @@
+{
+  "name": "awesome-kamal-directory",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "check:links": "node scripts/check-links.mjs"
+  }
+}

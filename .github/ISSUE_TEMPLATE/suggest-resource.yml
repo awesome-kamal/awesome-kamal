@@ -1,0 +1,39 @@
+name: Suggest a resource
+description: Propose a Kamal-related tool, example, or learning resource
+title: "Resource: "
+labels: ["resource-suggestion"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Link to the source or official page
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Project or resource name
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Official
+        - Deployment tools
+        - Configuration
+        - Operations
+        - Infrastructure
+        - Examples & recipes
+        - Learning
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should this be included?
+      description: Explain its Kamal relevance and which version it supports, if known.
+    validations:
+      required: true

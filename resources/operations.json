@@ -1,0 +1,77 @@
+[
+  {
+    "id": "kamal-backup",
+    "name": "kamal-backup",
+    "url": "https://github.com/crmne/kamal-backup",
+    "category": "operations",
+    "description": "Scheduled encrypted database and file backups for Rails applications deployed with Kamal.",
+    "kind": "open-source",
+    "tags": [
+      "backups",
+      "rails"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "rails-conductor",
+    "name": "Rails Conductor",
+    "url": "https://github.com/nauman/rails-conductor",
+    "category": "operations",
+    "description": "Self-hosted control plane for Rails operations, including Kamal and native deployments.",
+    "kind": "open-source",
+    "tags": [
+      "control-plane",
+      "rails"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "deployangel",
+    "name": "DeployAngel",
+    "url": "https://github.com/DeployAngel/deployangel-ruby",
+    "category": "operations",
+    "description": "Ruby integration for post-deploy verification and telemetry.",
+    "kind": "open-source",
+    "tags": [
+      "monitoring"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "crowdsec-kamal",
+    "name": "Automated CrowdSec Kamal",
+    "url": "https://github.com/muthuishere/automated-crowdsec-kamal",
+    "category": "operations",
+    "description": "Integrate CrowdSec security controls into a Kamal setup.",
+    "kind": "open-source",
+    "tags": [
+      "security"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "shoestring",
+    "name": "Shoestring",
+    "url": "https://github.com/tachyurgy/shoestring",
+    "category": "operations",
+    "description": "Self-hosted observability with a Kamal proxy log integration.",
+    "kind": "open-source",
+    "tags": [
+      "observability"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "upstate",
+    "name": "Upstate",
+    "url": "https://upstate.run/",
+    "category": "operations",
+    "description": "Production visibility, deployment history, and health checks for Kamal applications.",
+    "kind": "commercial",
+    "tags": [
+      "monitoring",
+      "hosted"
+    ],
+    "link_checked_at": "2026-11-12"
+  }
+]

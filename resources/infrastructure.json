@@ -1,0 +1,76 @@
+[
+  {
+    "id": "kamal-ansible-manager",
+    "name": "kamal-ansible-manager",
+    "url": "https://github.com/guillaumebriday/kamal-ansible-manager",
+    "category": "infrastructure",
+    "description": "Provision and manage servers with Ansible for Kamal.",
+    "kind": "open-source",
+    "tags": [
+      "ansible"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "terraform-hetzner",
+    "name": "terraform-hetzner",
+    "url": "https://github.com/luizkowalski/terraform-hetzner",
+    "category": "infrastructure",
+    "description": "Terraform provisioning examples for Hetzner deployments.",
+    "kind": "open-source",
+    "tags": [
+      "terraform",
+      "hetzner"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "kitsune-kit",
+    "name": "kitsune-kit",
+    "url": "https://github.com/OmarHrra/kitsune-kit",
+    "category": "infrastructure",
+    "description": "VPS bootstrap and server provisioning toolkit.",
+    "kind": "open-source",
+    "tags": [
+      "vps"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "dsd-vps-kamal",
+    "name": "dsd-vps-kamal",
+    "url": "https://github.com/janraasch/dsd-vps-kamal",
+    "category": "infrastructure",
+    "description": "VPS deployment tooling for Django with Kamal.",
+    "kind": "open-source",
+    "tags": [
+      "django"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "shipyard-ansible",
+    "name": "shipyard",
+    "url": "https://github.com/onancelabs/shipyard",
+    "category": "infrastructure",
+    "description": "Ansible, Caddy, and Kamal infrastructure setup.",
+    "kind": "open-source",
+    "tags": [
+      "ansible",
+      "caddy"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "singleserver",
+    "name": "Single Server",
+    "url": "https://github.com/dvassallo/singleserver",
+    "category": "infrastructure",
+    "description": "Related single-server hosting approach incorporating Kamal.",
+    "kind": "open-source",
+    "tags": [
+      "adjacent"
+    ],
+    "link_checked_at": "2026-11-12"
+  }
+]

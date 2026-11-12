@@ -1,0 +1,88 @@
+[
+  {
+    "id": "kamalduo",
+    "name": "kamalduo",
+    "url": "https://github.com/scarver2/kamalduo",
+    "category": "examples",
+    "description": "Small Sinatra application deployed with Kamal 2.",
+    "kind": "open-source",
+    "tags": [
+      "sinatra"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "frontend-backend-demo",
+    "name": "Kamal frontend/backend demo",
+    "url": "https://github.com/hboon/kamal-frontend-backend-demo",
+    "category": "examples",
+    "description": "Frontend, backend, and database deployment example.",
+    "kind": "open-source",
+    "tags": [
+      "multi-service"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "ghost-hetzner",
+    "name": "GhostCMS on Kamal and Hetzner",
+    "url": "https://github.com/h4nz0x/GhostCMS-Kamal-Hetzner",
+    "category": "examples",
+    "description": "Deploy Ghost CMS using Kamal on Hetzner.",
+    "kind": "open-source",
+    "tags": [
+      "ghost",
+      "hetzner"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "kamal-quake",
+    "name": "kamal-quake",
+    "url": "https://github.com/neonwatty/kamal-quake",
+    "category": "examples",
+    "description": "Deploy the QuakeJS game with Kamal.",
+    "kind": "open-source",
+    "tags": [
+      "demo"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "grimmory-kamal",
+    "name": "grimmory-kamal",
+    "url": "https://github.com/eval/grimmory-kamal",
+    "category": "examples",
+    "description": "Kamal deployment of a self-hosted library application.",
+    "kind": "open-source",
+    "tags": [
+      "demo"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "mp-embeddings",
+    "name": "Embeddings inference accessory",
+    "url": "https://github.com/marianposaceanu/mp-com-embeddings",
+    "category": "examples",
+    "description": "Run embedding inference alongside an application.",
+    "kind": "open-source",
+    "tags": [
+      "ai",
+      "accessory"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "django-emojivote",
+    "name": "django-emojivote",
+    "url": "https://github.com/janraasch/django-emojivote",
+    "category": "examples",
+    "description": "Django demo showing Kamal deployment patterns.",
+    "kind": "open-source",
+    "tags": [
+      "django"
+    ],
+    "link_checked_at": "2026-11-12"
+  }
+]

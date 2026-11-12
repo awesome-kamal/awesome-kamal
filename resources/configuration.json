@@ -1,0 +1,27 @@
+[
+  {
+    "id": "kamal-lint",
+    "name": "kamal-lint",
+    "url": "https://github.com/davafons/kamal-lint",
+    "category": "configuration",
+    "description": "Lint and inspect Kamal configuration.",
+    "kind": "open-source",
+    "tags": [
+      "lint"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "kamal-json-schema",
+    "name": "kamal-json-schema",
+    "url": "https://github.com/RockieStar-Inc/kamal-json-schema",
+    "category": "configuration",
+    "description": "JSON schema for editor help with Kamal configuration.",
+    "kind": "open-source",
+    "tags": [
+      "schema",
+      "editor"
+    ],
+    "link_checked_at": "2026-11-12"
+  }
+]

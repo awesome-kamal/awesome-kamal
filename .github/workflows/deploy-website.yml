@@ -1,0 +1,19 @@
+name: Notify website of catalog update
+on:
+  push:
+    branches: [main]
+    paths: ['catalog.json']
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Trigger Pages deploy hook (if configured)
+        env:
+          DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+        run: |
+          if [ -n "$DEPLOY_HOOK" ]; then
+            curl --fail --silent --show-error --retry 2 -X POST "$DEPLOY_HOOK"
+          else
+            echo 'No deploy hook configured; skipping site rebuild.'
+          fi

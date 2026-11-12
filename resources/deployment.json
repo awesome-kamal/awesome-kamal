@@ -1,0 +1,78 @@
+[
+  {
+    "id": "kamal-deploy-action",
+    "name": "kamal-deploy Action",
+    "url": "https://github.com/igor-alexandrov/kamal-deploy",
+    "category": "deployment",
+    "description": "GitHub Action for automating Kamal deployments.",
+    "kind": "open-source",
+    "tags": [
+      "github-actions",
+      "ci"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "kamal-complete",
+    "name": "kamal-complete",
+    "url": "https://github.com/hschne/kamal-complete",
+    "category": "deployment",
+    "description": "Shell completion for Kamal commands.",
+    "kind": "open-source",
+    "tags": [
+      "terminal",
+      "cli"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "kamal-tui",
+    "name": "Kamal-TUI",
+    "url": "https://github.com/stawan15/Kamal-TUI",
+    "category": "deployment",
+    "description": "Terminal interface for Kamal operations.",
+    "kind": "open-source",
+    "tags": [
+      "tui"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "kamal-panel",
+    "name": "kamal-panel",
+    "url": "https://github.com/wenlingang/kamal-panel",
+    "category": "deployment",
+    "description": "SSH-oriented interface for managing Kamal deployments.",
+    "kind": "open-source",
+    "tags": [
+      "dashboard",
+      "ssh"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "helmsman",
+    "name": "Helmsman",
+    "url": "https://github.com/JijoBose/Helmsman",
+    "category": "deployment",
+    "description": "Local browser interface for Kamal.",
+    "kind": "open-source",
+    "tags": [
+      "dashboard"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "shipyrd",
+    "name": "Shipyrd",
+    "url": "https://github.com/Shipyrd/shipyrd",
+    "category": "deployment",
+    "description": "Team dashboard for Kamal deployment workflows.",
+    "kind": "open-source",
+    "tags": [
+      "dashboard",
+      "teams"
+    ],
+    "link_checked_at": "2026-11-12"
+  }
+]

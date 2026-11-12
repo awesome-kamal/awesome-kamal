@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "categories": [
+    {
+      "id": "official",
+      "name": "Official"
+    },
+    {
+      "id": "deployment",
+      "name": "Deployment tools"
+    },
+    {
+      "id": "configuration",
+      "name": "Configuration"
+    },
+    {
+      "id": "operations",
+      "name": "Operations"
+    },
+    {
+      "id": "infrastructure",
+      "name": "Infrastructure"
+    },
+    {
+      "id": "examples",
+      "name": "Examples & recipes"
+    },
+    {
+      "id": "learning",
+      "name": "Learning"
+    }
+  ],
+  "resources": [
+    {
+      "id": "kamal",
+      "name": "Kamal",
+      "url": "https://github.com/basecamp/kamal",
+      "category": "official",
+      "description": "Official deployment tool for containerized applications.",
+      "kind": "open-source",
+      "tags": [
+        "cli",
+        "deployment"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-proxy",
+      "name": "kamal-proxy",
+      "url": "https://github.com/basecamp/kamal-proxy",
+      "category": "official",
+      "description": "HTTP proxy used by modern Kamal deployments.",
+      "kind": "open-source",
+      "tags": [
+        "proxy"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-docs",
+      "name": "Kamal documentation",
+      "url": "https://kamal-deploy.org/",
+      "category": "official",
+      "description": "Official installation, commands, configuration, and upgrades.",
+      "kind": "documentation",
+      "tags": [
+        "docs"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-deploy-action",
+      "name": "kamal-deploy Action",
+      "url": "https://github.com/igor-alexandrov/kamal-deploy",
+      "category": "deployment",
+      "description": "GitHub Action for automating Kamal deployments.",
+      "kind": "open-source",
+      "tags": [
+        "github-actions",
+        "ci"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-complete",
+      "name": "kamal-complete",
+      "url": "https://github.com/hschne/kamal-complete",
+      "category": "deployment",
+      "description": "Shell completion for Kamal commands.",
+      "kind": "open-source",
+      "tags": [
+        "terminal",
+        "cli"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-tui",
+      "name": "Kamal-TUI",
+      "url": "https://github.com/stawan15/Kamal-TUI",
+      "category": "deployment",
+      "description": "Terminal interface for Kamal operations.",
+      "kind": "open-source",
+      "tags": [
+        "tui"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-panel",
+      "name": "kamal-panel",
+      "url": "https://github.com/wenlingang/kamal-panel",
+      "category": "deployment",
+      "description": "SSH-oriented interface for managing Kamal deployments.",
+      "kind": "open-source",
+      "tags": [
+        "dashboard",
+        "ssh"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "helmsman",
+      "name": "Helmsman",
+      "url": "https://github.com/JijoBose/Helmsman",
+      "category": "deployment",
+      "description": "Local browser interface for Kamal.",
+      "kind": "open-source",
+      "tags": [
+        "dashboard"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "shipyrd",
+      "name": "Shipyrd",
+      "url": "https://github.com/Shipyrd/shipyrd",
+      "category": "deployment",
+      "description": "Team dashboard for Kamal deployment workflows.",
+      "kind": "open-source",
+      "tags": [
+        "dashboard",
+        "teams"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-lint",
+      "name": "kamal-lint",
+      "url": "https://github.com/davafons/kamal-lint",
+      "category": "configuration",
+      "description": "Lint and inspect Kamal configuration.",
+      "kind": "open-source",
+      "tags": [
+        "lint"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-json-schema",
+      "name": "kamal-json-schema",
+      "url": "https://github.com/RockieStar-Inc/kamal-json-schema",
+      "category": "configuration",
+      "description": "JSON schema for editor help with Kamal configuration.",
+      "kind": "open-source",
+      "tags": [
+        "schema",
+        "editor"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-backup",
+      "name": "kamal-backup",
+      "url": "https://github.com/crmne/kamal-backup",
+      "category": "operations",
+      "description": "Scheduled encrypted database and file backups for Rails applications deployed with Kamal.",
+      "kind": "open-source",
+      "tags": [
+        "backups",
+        "rails"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "rails-conductor",
+      "name": "Rails Conductor",
+      "url": "https://github.com/nauman/rails-conductor",
+      "category": "operations",
+      "description": "Self-hosted control plane for Rails operations, including Kamal and native deployments.",
+      "kind": "open-source",
+      "tags": [
+        "control-plane",
+        "rails"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "deployangel",
+      "name": "DeployAngel",
+      "url": "https://github.com/DeployAngel/deployangel-ruby",
+      "category": "operations",
+      "description": "Ruby integration for post-deploy verification and telemetry.",
+      "kind": "open-source",
+      "tags": [
+        "monitoring"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "crowdsec-kamal",
+      "name": "Automated CrowdSec Kamal",
+      "url": "https://github.com/muthuishere/automated-crowdsec-kamal",
+      "category": "operations",
+      "description": "Integrate CrowdSec security controls into a Kamal setup.",
+      "kind": "open-source",
+      "tags": [
+        "security"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "shoestring",
+      "name": "Shoestring",
+      "url": "https://github.com/tachyurgy/shoestring",
+      "category": "operations",
+      "description": "Self-hosted observability with a Kamal proxy log integration.",
+      "kind": "open-source",
+      "tags": [
+        "observability"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "upstate",
+      "name": "Upstate",
+      "url": "https://upstate.run/",
+      "category": "operations",
+      "description": "Production visibility, deployment history, and health checks for Kamal applications.",
+      "kind": "commercial",
+      "tags": [
+        "monitoring",
+        "hosted"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-ansible-manager",
+      "name": "kamal-ansible-manager",
+      "url": "https://github.com/guillaumebriday/kamal-ansible-manager",
+      "category": "infrastructure",
+      "description": "Provision and manage servers with Ansible for Kamal.",
+      "kind": "open-source",
+      "tags": [
+        "ansible"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "terraform-hetzner",
+      "name": "terraform-hetzner",
+      "url": "https://github.com/luizkowalski/terraform-hetzner",
+      "category": "infrastructure",
+      "description": "Terraform provisioning examples for Hetzner deployments.",
+      "kind": "open-source",
+      "tags": [
+        "terraform",
+        "hetzner"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kitsune-kit",
+      "name": "kitsune-kit",
+      "url": "https://github.com/OmarHrra/kitsune-kit",
+      "category": "infrastructure",
+      "description": "VPS bootstrap and server provisioning toolkit.",
+      "kind": "open-source",
+      "tags": [
+        "vps"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "dsd-vps-kamal",
+      "name": "dsd-vps-kamal",
+      "url": "https://github.com/janraasch/dsd-vps-kamal",
+      "category": "infrastructure",
+      "description": "VPS deployment tooling for Django with Kamal.",
+      "kind": "open-source",
+      "tags": [
+        "django"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "shipyard-ansible",
+      "name": "shipyard",
+      "url": "https://github.com/onancelabs/shipyard",
+      "category": "infrastructure",
+      "description": "Ansible, Caddy, and Kamal infrastructure setup.",
+      "kind": "open-source",
+      "tags": [
+        "ansible",
+        "caddy"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "singleserver",
+      "name": "Single Server",
+      "url": "https://github.com/dvassallo/singleserver",
+      "category": "infrastructure",
+      "description": "Related single-server hosting approach incorporating Kamal.",
+      "kind": "open-source",
+      "tags": [
+        "adjacent"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamalduo",
+      "name": "kamalduo",
+      "url": "https://github.com/scarver2/kamalduo",
+      "category": "examples",
+      "description": "Small Sinatra application deployed with Kamal 2.",
+      "kind": "open-source",
+      "tags": [
+        "sinatra"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "frontend-backend-demo",
+      "name": "Kamal frontend/backend demo",
+      "url": "https://github.com/hboon/kamal-frontend-backend-demo",
+      "category": "examples",
+      "description": "Frontend, backend, and database deployment example.",
+      "kind": "open-source",
+      "tags": [
+        "multi-service"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "ghost-hetzner",
+      "name": "GhostCMS on Kamal and Hetzner",
+      "url": "https://github.com/h4nz0x/GhostCMS-Kamal-Hetzner",
+      "category": "examples",
+      "description": "Deploy Ghost CMS using Kamal on Hetzner.",
+      "kind": "open-source",
+      "tags": [
+        "ghost",
+        "hetzner"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-quake",
+      "name": "kamal-quake",
+      "url": "https://github.com/neonwatty/kamal-quake",
+      "category": "examples",
+      "description": "Deploy the QuakeJS game with Kamal.",
+      "kind": "open-source",
+      "tags": [
+        "demo"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "grimmory-kamal",
+      "name": "grimmory-kamal",
+      "url": "https://github.com/eval/grimmory-kamal",
+      "category": "examples",
+      "description": "Kamal deployment of a self-hosted library application.",
+      "kind": "open-source",
+      "tags": [
+        "demo"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "mp-embeddings",
+      "name": "Embeddings inference accessory",
+      "url": "https://github.com/marianposaceanu/mp-com-embeddings",
+      "category": "examples",
+      "description": "Run embedding inference alongside an application.",
+      "kind": "open-source",
+      "tags": [
+        "ai",
+        "accessory"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "django-emojivote",
+      "name": "django-emojivote",
+      "url": "https://github.com/janraasch/django-emojivote",
+      "category": "examples",
+      "description": "Django demo showing Kamal deployment patterns.",
+      "kind": "open-source",
+      "tags": [
+        "django"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-manual",
+      "name": "Kamal Handbook",
+      "url": "https://kamalmanual.com/handbook/",
+      "category": "learning",
+      "description": "Long-form guide to deploying and operating with Kamal.",
+      "kind": "commercial",
+      "tags": [
+        "book"
+      ],
+      "link_checked_at": "2026-11-12"
+    },
+    {
+      "id": "kamal-wiki",
+      "name": "Kamal Wiki",
+      "url": "https://kamal.wiki/",
+      "category": "learning",
+      "description": "Unofficial Kamal tutorials; check articles for version compatibility.",
+      "kind": "documentation",
+      "tags": [
+        "docs"
+      ],
+      "link_checked_at": "2026-11-12"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "kamal",
+    "name": "Kamal",
+    "url": "https://github.com/basecamp/kamal",
+    "category": "official",
+    "description": "Official deployment tool for containerized applications.",
+    "kind": "open-source",
+    "tags": [
+      "cli",
+      "deployment"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "kamal-proxy",
+    "name": "kamal-proxy",
+    "url": "https://github.com/basecamp/kamal-proxy",
+    "category": "official",
+    "description": "HTTP proxy used by modern Kamal deployments.",
+    "kind": "open-source",
+    "tags": [
+      "proxy"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "kamal-docs",
+    "name": "Kamal documentation",
+    "url": "https://kamal-deploy.org/",
+    "category": "official",
+    "description": "Official installation, commands, configuration, and upgrades.",
+    "kind": "documentation",
+    "tags": [
+      "docs"
+    ],
+    "link_checked_at": "2026-11-12"
+  }
+]

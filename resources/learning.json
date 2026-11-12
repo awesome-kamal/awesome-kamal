@@ -1,0 +1,26 @@
+[
+  {
+    "id": "kamal-manual",
+    "name": "Kamal Handbook",
+    "url": "https://kamalmanual.com/handbook/",
+    "category": "learning",
+    "description": "Long-form guide to deploying and operating with Kamal.",
+    "kind": "commercial",
+    "tags": [
+      "book"
+    ],
+    "link_checked_at": "2026-11-12"
+  },
+  {
+    "id": "kamal-wiki",
+    "name": "Kamal Wiki",
+    "url": "https://kamal.wiki/",
+    "category": "learning",
+    "description": "Unofficial Kamal tutorials; check articles for version compatibility.",
+    "kind": "documentation",
+    "tags": [
+      "docs"
+    ],
+    "link_checked_at": "2026-11-12"
+  }
+]
