@@ -12,7 +12,7 @@ for(const [cat] of groups){
   if(!Array.isArray(entry.tags)||entry.tags.some(x=>typeof x!=='string'))throw Error(entry.id+': tags');
   if(typeof entry.description!=='string'||!entry.description.trim()||entry.description.length>220)throw Error(entry.id+': description');
   const url=new URL(entry.url); if(url.protocol!=='https:')throw Error(entry.id+': HTTPS required');
-  const normalized=(url.origin+url.pathname.replace(/\\/$/,'' )).toLowerCase();
+  const normalized=(url.origin+(url.pathname.endsWith('/')?url.pathname.slice(0,-1):url.pathname)).toLowerCase();
   if(ids.has(entry.id)||urls.has(normalized))throw Error('Duplicate '+entry.id);
   ids.add(entry.id);urls.add(normalized);resources.push(entry);
  }
@@ -25,7 +25,7 @@ for(const group of c.categories){
  lines.push("");
 }
 lines.push("---","","Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Repository existence was checked on November 12, 2026, but functionality and compatibility have not been tested. Listings are not endorsements.","","Inspired by the original [awesome-kamal](https://github.com/anthonynsimon/awesome-kamal) directory. Catalog metadata is dedicated to the public domain under [CC0](LICENSE).","");
-const artifacts=[['README.md',lines.join('\\n')],['catalog.json',JSON.stringify(c,null,2)+'\\n']];
+const artifacts=[['README.md',lines.join(String.fromCharCode(10))],['catalog.json',JSON.stringify(c,null,2)+String.fromCharCode(10)]];
 const check=process.argv.includes('--check');
 for(const [path,output] of artifacts){if(check){const current=await readFile(path,'utf8').catch(()=>null);if(current!==output)throw Error('Stale '+path+'; run npm run build');}else await writeFile(path,output);}
 console.log((check?'Validated ':'Generated ')+resources.length+' entries');
