@@ -4,23 +4,29 @@
     "name": "Kamal Handbook",
     "url": "https://kamalmanual.com/handbook/",
     "category": "learning",
-    "description": "Long-form guide to deploying and operating with Kamal.",
+    "description": "Long-form handbook for learning Kamal deployment and production operations.",
     "kind": "commercial",
     "tags": [
       "book"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "A book-style alternative to collecting disconnected tutorials about server setup and day-two tasks.",
+    "best_for": "You prefer a structured, start-to-finish learning resource.",
+    "caveat": "Paid material; verify which Kamal releases are covered."
   },
   {
     "id": "kamal-wiki",
     "name": "Kamal Wiki",
     "url": "https://kamal.wiki/",
     "category": "learning",
-    "description": "Unofficial Kamal tutorials; check articles for version compatibility.",
+    "description": "Independent Kamal documentation and practical tutorial collection.",
     "kind": "documentation",
     "tags": [
       "docs"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Supplemental community writing and operational examples outside the official docs.",
+    "best_for": "You are looking for additional walkthroughs and alternative explanations.",
+    "caveat": "Check article dates; older Kamal 1/MRSK examples may no longer apply."
   }
 ]

@@ -36,397 +36,493 @@
       "name": "Kamal",
       "url": "https://github.com/basecamp/kamal",
       "category": "official",
-      "description": "Official deployment tool for containerized applications.",
+      "description": "Official CLI for building images, provisioning Docker hosts, and deploying applications over SSH.",
       "kind": "open-source",
       "tags": [
         "cli",
         "deployment"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Kamal coordinates Docker image builds, registry pushes, rolling deployments, accessories, and proxy health checks on servers you control.",
+      "best_for": "You want the canonical Kamal tool and deployment workflow.",
+      "caveat": "Kamal 1/MRSK tutorials describe Traefik and configuration that differ from current Kamal."
     },
     {
       "id": "kamal-proxy",
       "name": "kamal-proxy",
       "url": "https://github.com/basecamp/kamal-proxy",
       "category": "official",
-      "description": "HTTP proxy used by modern Kamal deployments.",
+      "description": "Reverse proxy powering health-checked traffic switching during modern Kamal deployments.",
       "kind": "open-source",
       "tags": [
         "proxy"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Kamal Proxy routes requests to application containers and participates in the cutover once a new release responds to health checks.",
+      "best_for": "You need to understand routing, TLS, or zero-downtime rollout behavior.",
+      "caveat": "This is an infrastructure component, not a standalone deployment dashboard."
     },
     {
       "id": "kamal-docs",
       "name": "Kamal documentation",
       "url": "https://kamal-deploy.org/",
       "category": "official",
-      "description": "Official installation, commands, configuration, and upgrades.",
+      "description": "Official reference for installing, configuring, operating, and upgrading Kamal.",
       "kind": "documentation",
       "tags": [
         "docs"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Covers current commands, deploy.yml options, hooks, destinations, and version migrations directly from the project maintainers.",
+      "best_for": "You are checking exact configuration syntax or the expected behavior of a command.",
+      "caveat": "Choose the correct version of the docs; Kamal 1 guidance is separately maintained."
     },
     {
       "id": "kamal-deploy-action",
       "name": "kamal-deploy Action",
       "url": "https://github.com/igor-alexandrov/kamal-deploy",
       "category": "deployment",
-      "description": "GitHub Action for automating Kamal deployments.",
+      "description": "GitHub Action to run Kamal 2 deployments from CI, including destinations and optional image-push control.",
       "kind": "open-source",
       "tags": [
         "github-actions",
         "ci"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Runs Kamal from a GitHub runner and supports separate environment/config inputs and deployments using previously pushed images.",
+      "best_for": "You want deployments to happen after CI instead of from a laptop.",
+      "caveat": "Runners need SSH access and the required registry and app secrets."
     },
     {
       "id": "kamal-complete",
       "name": "kamal-complete",
       "url": "https://github.com/hschne/kamal-complete",
       "category": "deployment",
-      "description": "Shell completion for Kamal commands.",
+      "description": "Bash, Zsh, and Fish tab completions for Kamal subcommands and flags.",
       "kind": "open-source",
       "tags": [
         "terminal",
         "cli"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Supplies shell completion files and install instructions for common interactive terminals.",
+      "best_for": "You use the Kamal CLI frequently and want quicker command discovery.",
+      "caveat": "Install the variant for your shell; the project does not change Kamal itself."
     },
     {
       "id": "kamal-tui",
       "name": "Kamal-TUI",
       "url": "https://github.com/stawan15/Kamal-TUI",
       "category": "deployment",
-      "description": "Terminal interface for Kamal operations.",
+      "description": "Terminal user interface for exploring and running Kamal operations.",
       "kind": "open-source",
       "tags": [
         "tui"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "An alternative interaction layer for Kamal operators who prefer navigable terminal screens to individual CLI commands.",
+      "best_for": "You are evaluating a keyboard-first operations interface.",
+      "caveat": "Review current command coverage and version compatibility before production use."
     },
     {
       "id": "kamal-panel",
       "name": "kamal-panel",
       "url": "https://github.com/wenlingang/kamal-panel",
       "category": "deployment",
-      "description": "SSH-oriented interface for managing Kamal deployments.",
+      "description": "Self-hosted SSH-based Kamal panel for status, logs, deployments, rollbacks, and notifications.",
       "kind": "open-source",
       "tags": [
         "dashboard",
         "ssh"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Uses Kamal commands and SSH access to collect fleet state and perform operational actions; includes log views and alert rules.",
+      "best_for": "You run multiple apps and want a central operational interface.",
+      "caveat": "Treat admin access and stored SSH credentials as highly privileged."
     },
     {
       "id": "helmsman",
       "name": "Helmsman",
       "url": "https://github.com/JijoBose/Helmsman",
       "category": "deployment",
-      "description": "Local browser interface for Kamal.",
+      "description": "Local browser interface experiment for Kamal operations.",
       "kind": "open-source",
       "tags": [
         "dashboard"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "A project worth investigating as an alternative local interface for running deployment tasks.",
+      "best_for": "You prefer a local UI to a hosted control plane.",
+      "caveat": "A maintained README could not be retrieved during curation; review functionality directly."
     },
     {
       "id": "shipyrd",
       "name": "Shipyrd",
       "url": "https://github.com/Shipyrd/shipyrd",
       "category": "deployment",
-      "description": "Team dashboard for Kamal deployment workflows.",
+      "description": "Team deployment dashboard fed by Kamal lifecycle hooks.",
       "kind": "open-source",
       "tags": [
         "dashboard",
         "teams"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Runs as a Kamal accessory and gathers hook-driven deployment events to show releases to collaborators.",
+      "best_for": "You want shared deploy status without replacing Kamal.",
+      "caveat": "It has hosting and storage requirements; consult the setup instructions."
     },
     {
       "id": "kamal-lint",
       "name": "kamal-lint",
       "url": "https://github.com/davafons/kamal-lint",
       "category": "configuration",
-      "description": "Lint and inspect Kamal configuration.",
+      "description": "Static config linter for secrets, registry mismatches, invalid roles, and legacy proxy settings.",
       "kind": "open-source",
       "tags": [
         "lint"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Checks deploy.yml and destination overrides, and supports GitHub Actions annotations and structured output.",
+      "best_for": "You want config failures caught before an actual production deploy.",
+      "caveat": "Static linting cannot prove that servers and running workloads are healthy."
     },
     {
       "id": "kamal-json-schema",
       "name": "kamal-json-schema",
       "url": "https://github.com/RockieStar-Inc/kamal-json-schema",
       "category": "configuration",
-      "description": "JSON schema for editor help with Kamal configuration.",
+      "description": "Kamal 2 YAML schema providing editor autocomplete, hints, and validation.",
       "kind": "open-source",
       "tags": [
         "schema",
         "editor"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "A JSON Schema reference that can be attached to deploy.yml through a YAML language-server comment.",
+      "best_for": "You want editor help while writing deployment configuration.",
+      "caveat": "Editor checks complement Kamal's own config validation."
     },
     {
       "id": "kamal-backup",
       "name": "kamal-backup",
       "url": "https://github.com/crmne/kamal-backup",
       "category": "operations",
-      "description": "Scheduled encrypted database and file backups for Rails applications deployed with Kamal.",
+      "description": "Encrypted scheduled database and Active Storage backups packaged as a Kamal accessory.",
       "kind": "open-source",
       "tags": [
         "backups",
         "rails"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Uses restic repositories and documented restore drills for Rails deployments, including PostgreSQL, MySQL/MariaDB, SQLite and files.",
+      "best_for": "You run a Rails app on Kamal and need repeatable backups and restore testing.",
+      "caveat": "Test a real restore and review retention and storage credentials before relying on backups."
     },
     {
       "id": "rails-conductor",
       "name": "Rails Conductor",
       "url": "https://github.com/nauman/rails-conductor",
       "category": "operations",
-      "description": "Self-hosted control plane for Rails operations, including Kamal and native deployments.",
+      "description": "Early-stage self-hosted Rails operations control plane with Kamal support.",
       "kind": "open-source",
       "tags": [
         "control-plane",
         "rails"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Brings SSH execution, deployments, backups, metrics, and alerts into one interface for Docker/Kamal and native deployments.",
+      "best_for": "You operate a mixed Rails infrastructure and want a self-hosted control plane.",
+      "caveat": "The maintainers explicitly mark some features in progress; verify maturity."
     },
     {
       "id": "deployangel",
       "name": "DeployAngel",
       "url": "https://github.com/DeployAngel/deployangel-ruby",
       "category": "operations",
-      "description": "Ruby integration for post-deploy verification and telemetry.",
+      "description": "Ruby instrumentation for post-deployment behavior checks in Rails, Hanami, and Sinatra.",
       "kind": "open-source",
       "tags": [
         "monitoring"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Collects aggregated application signals after releases to help confirm runtime behavior beyond a container being healthy.",
+      "best_for": "You need application-level evidence a deployment is behaving normally.",
+      "caveat": "Requires a Ruby agent and configured telemetry ingestion."
     },
     {
       "id": "crowdsec-kamal",
       "name": "Automated CrowdSec Kamal",
       "url": "https://github.com/muthuishere/automated-crowdsec-kamal",
       "category": "operations",
-      "description": "Integrate CrowdSec security controls into a Kamal setup.",
+      "description": "Community integration of CrowdSec security tooling with Kamal.",
       "kind": "open-source",
       "tags": [
         "security"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Illustrates ways to add intrusion detection and response around a containerized app stack.",
+      "best_for": "You are evaluating host and edge security around Kamal.",
+      "caveat": "Test firewall and security rules on disposable infrastructure first."
     },
     {
       "id": "shoestring",
       "name": "Shoestring",
       "url": "https://github.com/tachyurgy/shoestring",
       "category": "operations",
-      "description": "Self-hosted observability with a Kamal proxy log integration.",
+      "description": "Self-hosted observability that combines SSH snapshots with kamal-proxy request logs.",
       "kind": "open-source",
       "tags": [
         "observability"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Its boxwatch workflow produces HTML and agent-readable reports covering latency, errors, host resources, and container health.",
+      "best_for": "You have a few machines and want local diagnostics without a hosted APM bill.",
+      "caveat": "Requires log and SSH access; monitoring is not the same as managed alerting."
     },
     {
       "id": "upstate",
       "name": "Upstate",
       "url": "https://upstate.run/",
       "category": "operations",
-      "description": "Production visibility, deployment history, and health checks for Kamal applications.",
+      "description": "Hosted Kamal production visibility with deploy receipts, observer health checks, and alerts.",
       "kind": "commercial",
       "tags": [
         "monitoring",
         "hosted"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Connects the signals from hosts, components, and deployments to help owners see whether their fleet is behaving as intended.",
+      "best_for": "You manage several Kamal apps and want a single view of their operational health.",
+      "caveat": "Commercial sponsor of this directory; sponsorship does not affect inclusion or order."
     },
     {
       "id": "kamal-ansible-manager",
       "name": "kamal-ansible-manager",
       "url": "https://github.com/guillaumebriday/kamal-ansible-manager",
       "category": "infrastructure",
-      "description": "Provision and manage servers with Ansible for Kamal.",
+      "description": "Ansible setup for Docker and Ubuntu server hardening before deploying with Kamal.",
       "kind": "open-source",
       "tags": [
         "ansible"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Installs and configures Docker, Fail2ban, UFW, time sync, security updates, SSH policy and swap.",
+      "best_for": "You want consistent Ubuntu baseline provisioning.",
+      "caveat": "Review SSH/firewall changes carefully to avoid losing remote access."
     },
     {
       "id": "terraform-hetzner",
       "name": "terraform-hetzner",
       "url": "https://github.com/luizkowalski/terraform-hetzner",
       "category": "infrastructure",
-      "description": "Terraform provisioning examples for Hetzner deployments.",
+      "description": "Terraform example separating Kamal web hosts from private accessory hosts at Hetzner.",
       "kind": "open-source",
       "tags": [
         "terraform",
         "hetzner"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Creates web and data servers, SSH jump-host configuration, and optional load balancing with more web machines.",
+      "best_for": "You want a concrete multi-server Kamal provisioning example.",
+      "caveat": "Adapt its infrastructure assumptions and firewall rules before using it in production."
     },
     {
       "id": "kitsune-kit",
       "name": "kitsune-kit",
       "url": "https://github.com/OmarHrra/kitsune-kit",
       "category": "infrastructure",
-      "description": "VPS bootstrap and server provisioning toolkit.",
+      "description": "Pre-1.0 CLI for provisioning DigitalOcean Ubuntu hosts for Docker and Kamal.",
       "kind": "open-source",
       "tags": [
         "vps"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Uses init/doctor/plan/apply steps to configure a tagged Droplet, SSH, UFW, Docker, and optional data services.",
+      "best_for": "You want a guided DigitalOcean server setup with a reviewed change plan.",
+      "caveat": "Supported systems are intentionally limited; the state format may change before 1.0."
     },
     {
       "id": "dsd-vps-kamal",
       "name": "dsd-vps-kamal",
       "url": "https://github.com/janraasch/dsd-vps-kamal",
       "category": "infrastructure",
-      "description": "VPS deployment tooling for Django with Kamal.",
+      "description": "Django Simple Deploy plugin generating Kamal configuration for an existing VPS.",
       "kind": "open-source",
       "tags": [
         "django"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Generates deploy.yml, Dockerfile, secrets, and Django production settings, with optional full deployment automation.",
+      "best_for": "You use Django and want help preparing a Kamal deployment.",
+      "caveat": "Pre-1.0; provisioning and securing the VPS is out of scope."
     },
     {
       "id": "shipyard-ansible",
       "name": "shipyard",
       "url": "https://github.com/onancelabs/shipyard",
       "category": "infrastructure",
-      "description": "Ansible, Caddy, and Kamal infrastructure setup.",
+      "description": "Opinionated Ansible, Tailscale, Cloudflare, and Caddy setup for Kamal hosting.",
       "kind": "open-source",
       "tags": [
         "ansible",
         "caddy"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Builds private networking, server roles, TLS, Postgres/Redis, backups and optional telemetry before handing application deploys to Kamal.",
+      "best_for": "You want a repeatable self-hosted stack rather than a series of manual VPS setup steps.",
+      "caveat": "It makes substantial infrastructure choices; understand the Cloudflare and Tailscale dependencies."
     },
     {
       "id": "singleserver",
       "name": "Single Server",
       "url": "https://github.com/dvassallo/singleserver",
       "category": "infrastructure",
-      "description": "Related single-server hosting approach incorporating Kamal.",
+      "description": "Single-server app delivery system incorporating Kamal, Docker, GitHub, and Cloudflare.",
       "kind": "open-source",
       "tags": [
         "adjacent"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "A more opinionated self-hosting interface built around pushing code to one Linux server.",
+      "best_for": "You want to compare managed-feeling single-host delivery to running Kamal directly.",
+      "caveat": "Its workflows are not identical to vanilla Kamal; evaluate the architecture first."
     },
     {
       "id": "kamalduo",
       "name": "kamalduo",
       "url": "https://github.com/scarver2/kamalduo",
       "category": "examples",
-      "description": "Small Sinatra application deployed with Kamal 2.",
+      "description": "Sinatra application example for Kamal 2, including health checks and VPS walkthroughs.",
       "kind": "open-source",
       "tags": [
         "sinatra"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Includes /healthz, Docker setup, CI and secrets notes plus deployment instructions for multiple VPS providers.",
+      "best_for": "You want a concrete non-Rails Kamal 2 example.",
+      "caveat": "Demonstration settings are a learning aid, not drop-in production defaults."
     },
     {
       "id": "frontend-backend-demo",
       "name": "Kamal frontend/backend demo",
       "url": "https://github.com/hboon/kamal-frontend-backend-demo",
       "category": "examples",
-      "description": "Frontend, backend, and database deployment example.",
+      "description": "Example of separate Bun/Node frontend and backend services with a database on one Kamal host.",
       "kind": "open-source",
       "tags": [
         "multi-service"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Shows how multiple HTTP apps and hostnames can share a server in a configuration beyond the typical single Rails app.",
+      "best_for": "You deploy frontend and API services separately.",
+      "caveat": "The example database is provisioned but not fully exercised by the app."
     },
     {
       "id": "ghost-hetzner",
       "name": "GhostCMS on Kamal and Hetzner",
       "url": "https://github.com/h4nz0x/GhostCMS-Kamal-Hetzner",
       "category": "examples",
-      "description": "Deploy Ghost CMS using Kamal on Hetzner.",
+      "description": "Community Ghost CMS deployment example using Kamal on Hetzner.",
       "kind": "open-source",
       "tags": [
         "ghost",
         "hetzner"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "A reference for containerizing and deploying a CMS rather than a Ruby or Node application template.",
+      "best_for": "You are adapting Kamal to self-hosted content publishing.",
+      "caveat": "Verify current Ghost image and Kamal compatibility before reusing scripts."
     },
     {
       "id": "kamal-quake",
       "name": "kamal-quake",
       "url": "https://github.com/neonwatty/kamal-quake",
       "category": "examples",
-      "description": "Deploy the QuakeJS game with Kamal.",
+      "description": "QuakeJS browser-game deployment example using Kamal.",
       "kind": "open-source",
       "tags": [
         "demo"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "A playful example showing that Kamal can ship a containerized app outside its Rails origins.",
+      "best_for": "You want an approachable deployment demo.",
+      "caveat": "Educational example, not production operations tooling."
     },
     {
       "id": "grimmory-kamal",
       "name": "grimmory-kamal",
       "url": "https://github.com/eval/grimmory-kamal",
       "category": "examples",
-      "description": "Kamal deployment of a self-hosted library application.",
+      "description": "Kamal configuration example for a self-hosted library application.",
       "kind": "open-source",
       "tags": [
         "demo"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "A real app's deployment files that can help compare Docker and Kamal choices with your own setup.",
+      "best_for": "You learn best by reading other applications' deploy configs.",
+      "caveat": "Its configuration reflects one project's environment and may need updating."
     },
     {
       "id": "mp-embeddings",
       "name": "Embeddings inference accessory",
       "url": "https://github.com/marianposaceanu/mp-com-embeddings",
       "category": "examples",
-      "description": "Run embedding inference alongside an application.",
+      "description": "Example of an embeddings inference workload deployed alongside a Kamal app.",
       "kind": "open-source",
       "tags": [
         "ai",
         "accessory"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Explores deployment of an AI-support service as an accessory-like process.",
+      "best_for": "You are planning an additional inference service in a self-hosted stack.",
+      "caveat": "Review resource consumption and persistence independently."
     },
     {
       "id": "django-emojivote",
       "name": "django-emojivote",
       "url": "https://github.com/janraasch/django-emojivote",
       "category": "examples",
-      "description": "Django demo showing Kamal deployment patterns.",
+      "description": "Django sample application with deployment-related files.",
       "kind": "open-source",
       "tags": [
         "django"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "A small Python web app that can be inspected when exploring non-Rails Kamal practices.",
+      "best_for": "You want to inspect another framework's deployment layout.",
+      "caveat": "This is an example application, not a reusable deployment tool."
     },
     {
       "id": "kamal-manual",
       "name": "Kamal Handbook",
       "url": "https://kamalmanual.com/handbook/",
       "category": "learning",
-      "description": "Long-form guide to deploying and operating with Kamal.",
+      "description": "Long-form handbook for learning Kamal deployment and production operations.",
       "kind": "commercial",
       "tags": [
         "book"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "A book-style alternative to collecting disconnected tutorials about server setup and day-two tasks.",
+      "best_for": "You prefer a structured, start-to-finish learning resource.",
+      "caveat": "Paid material; verify which Kamal releases are covered."
     },
     {
       "id": "kamal-wiki",
       "name": "Kamal Wiki",
       "url": "https://kamal.wiki/",
       "category": "learning",
-      "description": "Unofficial Kamal tutorials; check articles for version compatibility.",
+      "description": "Independent Kamal documentation and practical tutorial collection.",
       "kind": "documentation",
       "tags": [
         "docs"
       ],
-      "link_checked_at": "2026-11-12"
+      "link_checked_at": "2026-11-12",
+      "details": "Supplemental community writing and operational examples outside the official docs.",
+      "best_for": "You are looking for additional walkthroughs and alternative explanations.",
+      "caveat": "Check article dates; older Kamal 1/MRSK examples may no longer apply."
     }
   ]
 }

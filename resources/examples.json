@@ -4,85 +4,106 @@
     "name": "kamalduo",
     "url": "https://github.com/scarver2/kamalduo",
     "category": "examples",
-    "description": "Small Sinatra application deployed with Kamal 2.",
+    "description": "Sinatra application example for Kamal 2, including health checks and VPS walkthroughs.",
     "kind": "open-source",
     "tags": [
       "sinatra"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Includes /healthz, Docker setup, CI and secrets notes plus deployment instructions for multiple VPS providers.",
+    "best_for": "You want a concrete non-Rails Kamal 2 example.",
+    "caveat": "Demonstration settings are a learning aid, not drop-in production defaults."
   },
   {
     "id": "frontend-backend-demo",
     "name": "Kamal frontend/backend demo",
     "url": "https://github.com/hboon/kamal-frontend-backend-demo",
     "category": "examples",
-    "description": "Frontend, backend, and database deployment example.",
+    "description": "Example of separate Bun/Node frontend and backend services with a database on one Kamal host.",
     "kind": "open-source",
     "tags": [
       "multi-service"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Shows how multiple HTTP apps and hostnames can share a server in a configuration beyond the typical single Rails app.",
+    "best_for": "You deploy frontend and API services separately.",
+    "caveat": "The example database is provisioned but not fully exercised by the app."
   },
   {
     "id": "ghost-hetzner",
     "name": "GhostCMS on Kamal and Hetzner",
     "url": "https://github.com/h4nz0x/GhostCMS-Kamal-Hetzner",
     "category": "examples",
-    "description": "Deploy Ghost CMS using Kamal on Hetzner.",
+    "description": "Community Ghost CMS deployment example using Kamal on Hetzner.",
     "kind": "open-source",
     "tags": [
       "ghost",
       "hetzner"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "A reference for containerizing and deploying a CMS rather than a Ruby or Node application template.",
+    "best_for": "You are adapting Kamal to self-hosted content publishing.",
+    "caveat": "Verify current Ghost image and Kamal compatibility before reusing scripts."
   },
   {
     "id": "kamal-quake",
     "name": "kamal-quake",
     "url": "https://github.com/neonwatty/kamal-quake",
     "category": "examples",
-    "description": "Deploy the QuakeJS game with Kamal.",
+    "description": "QuakeJS browser-game deployment example using Kamal.",
     "kind": "open-source",
     "tags": [
       "demo"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "A playful example showing that Kamal can ship a containerized app outside its Rails origins.",
+    "best_for": "You want an approachable deployment demo.",
+    "caveat": "Educational example, not production operations tooling."
   },
   {
     "id": "grimmory-kamal",
     "name": "grimmory-kamal",
     "url": "https://github.com/eval/grimmory-kamal",
     "category": "examples",
-    "description": "Kamal deployment of a self-hosted library application.",
+    "description": "Kamal configuration example for a self-hosted library application.",
     "kind": "open-source",
     "tags": [
       "demo"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "A real app's deployment files that can help compare Docker and Kamal choices with your own setup.",
+    "best_for": "You learn best by reading other applications' deploy configs.",
+    "caveat": "Its configuration reflects one project's environment and may need updating."
   },
   {
     "id": "mp-embeddings",
     "name": "Embeddings inference accessory",
     "url": "https://github.com/marianposaceanu/mp-com-embeddings",
     "category": "examples",
-    "description": "Run embedding inference alongside an application.",
+    "description": "Example of an embeddings inference workload deployed alongside a Kamal app.",
     "kind": "open-source",
     "tags": [
       "ai",
       "accessory"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Explores deployment of an AI-support service as an accessory-like process.",
+    "best_for": "You are planning an additional inference service in a self-hosted stack.",
+    "caveat": "Review resource consumption and persistence independently."
   },
   {
     "id": "django-emojivote",
     "name": "django-emojivote",
     "url": "https://github.com/janraasch/django-emojivote",
     "category": "examples",
-    "description": "Django demo showing Kamal deployment patterns.",
+    "description": "Django sample application with deployment-related files.",
     "kind": "open-source",
     "tags": [
       "django"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "A small Python web app that can be inspected when exploring non-Rails Kamal practices.",
+    "best_for": "You want to inspect another framework's deployment layout.",
+    "caveat": "This is an example application, not a reusable deployment tool."
   }
 ]

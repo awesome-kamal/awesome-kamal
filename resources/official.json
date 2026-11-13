@@ -4,36 +4,45 @@
     "name": "Kamal",
     "url": "https://github.com/basecamp/kamal",
     "category": "official",
-    "description": "Official deployment tool for containerized applications.",
+    "description": "Official CLI for building images, provisioning Docker hosts, and deploying applications over SSH.",
     "kind": "open-source",
     "tags": [
       "cli",
       "deployment"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Kamal coordinates Docker image builds, registry pushes, rolling deployments, accessories, and proxy health checks on servers you control.",
+    "best_for": "You want the canonical Kamal tool and deployment workflow.",
+    "caveat": "Kamal 1/MRSK tutorials describe Traefik and configuration that differ from current Kamal."
   },
   {
     "id": "kamal-proxy",
     "name": "kamal-proxy",
     "url": "https://github.com/basecamp/kamal-proxy",
     "category": "official",
-    "description": "HTTP proxy used by modern Kamal deployments.",
+    "description": "Reverse proxy powering health-checked traffic switching during modern Kamal deployments.",
     "kind": "open-source",
     "tags": [
       "proxy"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Kamal Proxy routes requests to application containers and participates in the cutover once a new release responds to health checks.",
+    "best_for": "You need to understand routing, TLS, or zero-downtime rollout behavior.",
+    "caveat": "This is an infrastructure component, not a standalone deployment dashboard."
   },
   {
     "id": "kamal-docs",
     "name": "Kamal documentation",
     "url": "https://kamal-deploy.org/",
     "category": "official",
-    "description": "Official installation, commands, configuration, and upgrades.",
+    "description": "Official reference for installing, configuring, operating, and upgrading Kamal.",
     "kind": "documentation",
     "tags": [
       "docs"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Covers current commands, deploy.yml options, hooks, destinations, and version migrations directly from the project maintainers.",
+    "best_for": "You are checking exact configuration syntax or the expected behavior of a command.",
+    "caveat": "Choose the correct version of the docs; Kamal 1 guidance is separately maintained."
   }
 ]
