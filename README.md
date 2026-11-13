@@ -20,6 +20,7 @@ A community-curated directory of tools, guides, and resources for deploying and 
 - [kamal-panel](https://github.com/wenlingang/kamal-panel) — Self-hosted SSH-based Kamal panel for status, logs, deployments, rollbacks, and notifications.
 - [Helmsman](https://github.com/JijoBose/Helmsman) — Local browser interface experiment for Kamal operations.
 - [Shipyrd](https://github.com/Shipyrd/shipyrd) — Team deployment dashboard fed by Kamal lifecycle hooks.
+- [kamal-autodeploy](https://github.com/Upstate-run/kamal-autodeploy) — Go CLI that generates CI-gated GitHub Actions workflows to deploy only the Kamal services affected by a change.
 
 ## Configuration
 

@@ -172,6 +172,24 @@
       "caveat": "It has hosting and storage requirements; consult the setup instructions."
     },
     {
+      "id": "kamal-autodeploy",
+      "name": "kamal-autodeploy",
+      "url": "https://github.com/Upstate-run/kamal-autodeploy",
+      "category": "deployment",
+      "description": "Go CLI that generates CI-gated GitHub Actions workflows to deploy only the Kamal services affected by a change.",
+      "kind": "open-source",
+      "tags": [
+        "github-actions",
+        "ci",
+        "automation",
+        "go"
+      ],
+      "link_checked_at": "2026-11-12",
+      "details": "Generates a reviewed configuration file and an editable GitHub Actions workflow in your repository. After required CI passes, it selects changes since each service's last successful deployment, deploys affected services in order, and records results with GitHub Deployments. It supports manual onboarding, PR impact previews, and rollback workflows.",
+      "best_for": "You want CI-gated Kamal deployments without a separate hosted deploy service, particularly when a repository deploys multiple apps or services.",
+      "caveat": "Maintained by Upstate, this directory's sponsor. Requires GitHub environments, SSH access, registry credentials, and secrets. New configurations start in manual mode until you review and activate automatic deployments."
+    },
+    {
       "id": "kamal-lint",
       "name": "kamal-lint",
       "url": "https://github.com/davafons/kamal-lint",
