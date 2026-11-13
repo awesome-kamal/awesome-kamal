@@ -282,7 +282,7 @@
     {
       "id": "upstate",
       "name": "Upstate",
-      "url": "https://upstate.run/",
+      "url": "https://upstate.cloud/",
       "category": "operations",
       "description": "Hosted Kamal production visibility with deploy receipts, observer health checks, and alerts.",
       "kind": "commercial",

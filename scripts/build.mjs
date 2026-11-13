@@ -18,7 +18,7 @@ for(const [cat] of groups){
  }
 }
 const c={schema_version:1,categories:groups.map(([id,name])=>({id,name})),resources};
-const lines=["# Awesome Kamal","","A community-curated directory of tools, guides, and resources for deploying and operating with [Kamal](https://kamal-deploy.org/).","","**Website:** [awesomekamal.com](https://awesomekamal.com/) · **Suggest a resource:** [GitHub issues](https://github.com/awesome-kamal/awesome-kamal/issues/new/choose)","","> Independent community project, supported by [Upstate](https://upstate.run/). Not affiliated with the official Kamal maintainers.",""];
+const lines=["# Awesome Kamal","","A community-curated directory of tools, guides, and resources for deploying and operating with [Kamal](https://kamal-deploy.org/).","","**Website:** [awesomekamal.com](https://awesomekamal.com/) · **Suggest a resource:** [GitHub issues](https://github.com/awesome-kamal/awesome-kamal/issues/new/choose)","","> Independent community project, supported by [Upstate](https://upstate.cloud/). Not affiliated with the official Kamal maintainers.",""];
 for(const group of c.categories){
  lines.push("## "+group.name,"");
  for(const r of c.resources.filter(x=>x.category===group.id))lines.push("- ["+r.name+"]("+r.url+") — "+r.description+(r.kind==='commercial'?' **(commercial)**':''));

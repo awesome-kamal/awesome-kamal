@@ -4,7 +4,7 @@ A community-curated directory of tools, guides, and resources for deploying and 
 
 **Website:** [awesomekamal.com](https://awesomekamal.com/) · **Suggest a resource:** [GitHub issues](https://github.com/awesome-kamal/awesome-kamal/issues/new/choose)
 
-> Independent community project, supported by [Upstate](https://upstate.run/). Not affiliated with the official Kamal maintainers.
+> Independent community project, supported by [Upstate](https://upstate.cloud/). Not affiliated with the official Kamal maintainers.
 
 ## Official
 
@@ -33,7 +33,7 @@ A community-curated directory of tools, guides, and resources for deploying and 
 - [DeployAngel](https://github.com/DeployAngel/deployangel-ruby) — Ruby instrumentation for post-deployment behavior checks in Rails, Hanami, and Sinatra.
 - [Automated CrowdSec Kamal](https://github.com/muthuishere/automated-crowdsec-kamal) — Community integration of CrowdSec security tooling with Kamal.
 - [Shoestring](https://github.com/tachyurgy/shoestring) — Self-hosted observability that combines SSH snapshots with kamal-proxy request logs.
-- [Upstate](https://upstate.run/) — Hosted Kamal production visibility with deploy receipts, observer health checks, and alerts. **(commercial)**
+- [Upstate](https://upstate.cloud/) — Hosted Kamal production visibility with deploy receipts, observer health checks, and alerts. **(commercial)**
 
 ## Infrastructure
 

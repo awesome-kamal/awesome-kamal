@@ -14,4 +14,4 @@ Do not edit `catalog.json` or `README.md` directly; run `npm run build` to regen
 
 Resources must have substantive Kamal relevance; not every application tagged Kamal qualifies. We flag historical Kamal 1/MRSK patterns and avoid untested compatibility claims. Commercial and competing products are welcome. Sponsorship does not affect listing inclusion or order. We may decline entries that are broken, duplicates, promotional-only, or insufficiently relevant.
 
-The directory is independent and supported by [Upstate](https://upstate.run/), a commercial Kamal product.
+The directory is independent and supported by [Upstate](https://upstate.cloud/), a commercial Kamal product.
