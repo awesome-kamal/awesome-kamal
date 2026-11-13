@@ -4,24 +4,30 @@
     "name": "kamal-lint",
     "url": "https://github.com/davafons/kamal-lint",
     "category": "configuration",
-    "description": "Lint and inspect Kamal configuration.",
+    "description": "Static config linter for secrets, registry mismatches, invalid roles, and legacy proxy settings.",
     "kind": "open-source",
     "tags": [
       "lint"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Checks deploy.yml and destination overrides, and supports GitHub Actions annotations and structured output.",
+    "best_for": "You want config failures caught before an actual production deploy.",
+    "caveat": "Static linting cannot prove that servers and running workloads are healthy."
   },
   {
     "id": "kamal-json-schema",
     "name": "kamal-json-schema",
     "url": "https://github.com/RockieStar-Inc/kamal-json-schema",
     "category": "configuration",
-    "description": "JSON schema for editor help with Kamal configuration.",
+    "description": "Kamal 2 YAML schema providing editor autocomplete, hints, and validation.",
     "kind": "open-source",
     "tags": [
       "schema",
       "editor"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "A JSON Schema reference that can be attached to deploy.yml through a YAML language-server comment.",
+    "best_for": "You want editor help while writing deployment configuration.",
+    "caveat": "Editor checks complement Kamal's own config validation."
   }
 ]

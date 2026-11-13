@@ -4,75 +4,93 @@
     "name": "kamal-deploy Action",
     "url": "https://github.com/igor-alexandrov/kamal-deploy",
     "category": "deployment",
-    "description": "GitHub Action for automating Kamal deployments.",
+    "description": "GitHub Action to run Kamal 2 deployments from CI, including destinations and optional image-push control.",
     "kind": "open-source",
     "tags": [
       "github-actions",
       "ci"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Runs Kamal from a GitHub runner and supports separate environment/config inputs and deployments using previously pushed images.",
+    "best_for": "You want deployments to happen after CI instead of from a laptop.",
+    "caveat": "Runners need SSH access and the required registry and app secrets."
   },
   {
     "id": "kamal-complete",
     "name": "kamal-complete",
     "url": "https://github.com/hschne/kamal-complete",
     "category": "deployment",
-    "description": "Shell completion for Kamal commands.",
+    "description": "Bash, Zsh, and Fish tab completions for Kamal subcommands and flags.",
     "kind": "open-source",
     "tags": [
       "terminal",
       "cli"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Supplies shell completion files and install instructions for common interactive terminals.",
+    "best_for": "You use the Kamal CLI frequently and want quicker command discovery.",
+    "caveat": "Install the variant for your shell; the project does not change Kamal itself."
   },
   {
     "id": "kamal-tui",
     "name": "Kamal-TUI",
     "url": "https://github.com/stawan15/Kamal-TUI",
     "category": "deployment",
-    "description": "Terminal interface for Kamal operations.",
+    "description": "Terminal user interface for exploring and running Kamal operations.",
     "kind": "open-source",
     "tags": [
       "tui"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "An alternative interaction layer for Kamal operators who prefer navigable terminal screens to individual CLI commands.",
+    "best_for": "You are evaluating a keyboard-first operations interface.",
+    "caveat": "Review current command coverage and version compatibility before production use."
   },
   {
     "id": "kamal-panel",
     "name": "kamal-panel",
     "url": "https://github.com/wenlingang/kamal-panel",
     "category": "deployment",
-    "description": "SSH-oriented interface for managing Kamal deployments.",
+    "description": "Self-hosted SSH-based Kamal panel for status, logs, deployments, rollbacks, and notifications.",
     "kind": "open-source",
     "tags": [
       "dashboard",
       "ssh"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Uses Kamal commands and SSH access to collect fleet state and perform operational actions; includes log views and alert rules.",
+    "best_for": "You run multiple apps and want a central operational interface.",
+    "caveat": "Treat admin access and stored SSH credentials as highly privileged."
   },
   {
     "id": "helmsman",
     "name": "Helmsman",
     "url": "https://github.com/JijoBose/Helmsman",
     "category": "deployment",
-    "description": "Local browser interface for Kamal.",
+    "description": "Local browser interface experiment for Kamal operations.",
     "kind": "open-source",
     "tags": [
       "dashboard"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "A project worth investigating as an alternative local interface for running deployment tasks.",
+    "best_for": "You prefer a local UI to a hosted control plane.",
+    "caveat": "A maintained README could not be retrieved during curation; review functionality directly."
   },
   {
     "id": "shipyrd",
     "name": "Shipyrd",
     "url": "https://github.com/Shipyrd/shipyrd",
     "category": "deployment",
-    "description": "Team dashboard for Kamal deployment workflows.",
+    "description": "Team deployment dashboard fed by Kamal lifecycle hooks.",
     "kind": "open-source",
     "tags": [
       "dashboard",
       "teams"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Runs as a Kamal accessory and gathers hook-driven deployment events to show releases to collaborators.",
+    "best_for": "You want shared deploy status without replacing Kamal.",
+    "caveat": "It has hosting and storage requirements; consult the setup instructions."
   }
 ]

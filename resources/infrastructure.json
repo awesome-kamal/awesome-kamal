@@ -4,73 +4,91 @@
     "name": "kamal-ansible-manager",
     "url": "https://github.com/guillaumebriday/kamal-ansible-manager",
     "category": "infrastructure",
-    "description": "Provision and manage servers with Ansible for Kamal.",
+    "description": "Ansible setup for Docker and Ubuntu server hardening before deploying with Kamal.",
     "kind": "open-source",
     "tags": [
       "ansible"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Installs and configures Docker, Fail2ban, UFW, time sync, security updates, SSH policy and swap.",
+    "best_for": "You want consistent Ubuntu baseline provisioning.",
+    "caveat": "Review SSH/firewall changes carefully to avoid losing remote access."
   },
   {
     "id": "terraform-hetzner",
     "name": "terraform-hetzner",
     "url": "https://github.com/luizkowalski/terraform-hetzner",
     "category": "infrastructure",
-    "description": "Terraform provisioning examples for Hetzner deployments.",
+    "description": "Terraform example separating Kamal web hosts from private accessory hosts at Hetzner.",
     "kind": "open-source",
     "tags": [
       "terraform",
       "hetzner"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Creates web and data servers, SSH jump-host configuration, and optional load balancing with more web machines.",
+    "best_for": "You want a concrete multi-server Kamal provisioning example.",
+    "caveat": "Adapt its infrastructure assumptions and firewall rules before using it in production."
   },
   {
     "id": "kitsune-kit",
     "name": "kitsune-kit",
     "url": "https://github.com/OmarHrra/kitsune-kit",
     "category": "infrastructure",
-    "description": "VPS bootstrap and server provisioning toolkit.",
+    "description": "Pre-1.0 CLI for provisioning DigitalOcean Ubuntu hosts for Docker and Kamal.",
     "kind": "open-source",
     "tags": [
       "vps"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Uses init/doctor/plan/apply steps to configure a tagged Droplet, SSH, UFW, Docker, and optional data services.",
+    "best_for": "You want a guided DigitalOcean server setup with a reviewed change plan.",
+    "caveat": "Supported systems are intentionally limited; the state format may change before 1.0."
   },
   {
     "id": "dsd-vps-kamal",
     "name": "dsd-vps-kamal",
     "url": "https://github.com/janraasch/dsd-vps-kamal",
     "category": "infrastructure",
-    "description": "VPS deployment tooling for Django with Kamal.",
+    "description": "Django Simple Deploy plugin generating Kamal configuration for an existing VPS.",
     "kind": "open-source",
     "tags": [
       "django"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Generates deploy.yml, Dockerfile, secrets, and Django production settings, with optional full deployment automation.",
+    "best_for": "You use Django and want help preparing a Kamal deployment.",
+    "caveat": "Pre-1.0; provisioning and securing the VPS is out of scope."
   },
   {
     "id": "shipyard-ansible",
     "name": "shipyard",
     "url": "https://github.com/onancelabs/shipyard",
     "category": "infrastructure",
-    "description": "Ansible, Caddy, and Kamal infrastructure setup.",
+    "description": "Opinionated Ansible, Tailscale, Cloudflare, and Caddy setup for Kamal hosting.",
     "kind": "open-source",
     "tags": [
       "ansible",
       "caddy"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "Builds private networking, server roles, TLS, Postgres/Redis, backups and optional telemetry before handing application deploys to Kamal.",
+    "best_for": "You want a repeatable self-hosted stack rather than a series of manual VPS setup steps.",
+    "caveat": "It makes substantial infrastructure choices; understand the Cloudflare and Tailscale dependencies."
   },
   {
     "id": "singleserver",
     "name": "Single Server",
     "url": "https://github.com/dvassallo/singleserver",
     "category": "infrastructure",
-    "description": "Related single-server hosting approach incorporating Kamal.",
+    "description": "Single-server app delivery system incorporating Kamal, Docker, GitHub, and Cloudflare.",
     "kind": "open-source",
     "tags": [
       "adjacent"
     ],
-    "link_checked_at": "2026-11-12"
+    "link_checked_at": "2026-11-12",
+    "details": "A more opinionated self-hosting interface built around pushing code to one Linux server.",
+    "best_for": "You want to compare managed-feeling single-host delivery to running Kamal directly.",
+    "caveat": "Its workflows are not identical to vanilla Kamal; evaluate the architecture first."
   }
 ]
