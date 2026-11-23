@@ -105,5 +105,23 @@
     "details": "A small Python web app that can be inspected when exploring non-Rails Kamal practices.",
     "best_for": "You want to inspect another framework's deployment layout.",
     "caveat": "This is an example application, not a reusable deployment tool."
+  },
+  {
+    "id": "rails-kamal-local-template",
+    "name": "Rails 8 + Kamal local deploy template",
+    "url": "https://github.com/HammerSpb/rails-template",
+    "category": "examples",
+    "description": "Rails 8 template with production and staging Kamal configs and a Dockerized Linux deployment target for local testing.",
+    "kind": "open-source",
+    "tags": [
+      "rails",
+      "template",
+      "testing",
+      "staging"
+    ],
+    "link_checked_at": "2026-11-23",
+    "details": "Provides a Rails 8 application, PostgreSQL as a Kamal accessory, two deployment environments, a local Docker registry, and a Linux SSH deployment-target container. It demonstrates production-like Kamal deploys before you point the configuration at a VPS.",
+    "best_for": "You want to practice Kamal 2 deployment and staging workflows locally without renting and configuring a remote machine first.",
+    "caveat": "The local deployment target shares the host Docker socket and requires some macOS shell, SSH, and registry setup. Treat the template as a learning reference, not hardened production infrastructure."
   }
 ]

@@ -110,5 +110,39 @@
     "details": "Generates a reviewed configuration file and an editable GitHub Actions workflow in your repository. After required CI passes, it selects changes since each service's last successful deployment, deploys affected services in order, and records results with GitHub Deployments. It supports manual onboarding, PR impact previews, and rollback workflows.",
     "best_for": "You want CI-gated Kamal deployments without a separate hosted deploy service, particularly when a repository deploys multiple apps or services.",
     "caveat": "Maintained by Upstate, this directory's sponsor. Requires GitHub environments, SSH access, registry credentials, and secrets. New configurations start in manual mode until you review and activate automatic deployments."
+  },
+  {
+    "id": "dash",
+    "name": "Dash",
+    "url": "https://github.com/zoolutions/dash",
+    "category": "deployment",
+    "description": "Kamal-derived deployment CLI with additional proxy features such as load balancing, readiness gates, and traffic shaping.",
+    "kind": "open-source",
+    "tags": [
+      "cli",
+      "proxy",
+      "fork"
+    ],
+    "link_checked_at": "2026-11-23",
+    "details": "Dash is an independent fork of Kamal. It retains compatibility with existing Kamal deployments and configuration while introducing its own CLI and dash-proxy features, including multi-host load balancing and proxy routing options.",
+    "best_for": "You already deploy with Kamal but want to compare an actively developed fork focused on additional proxy and rollout capabilities.",
+    "caveat": "Dash is not the official Kamal CLI; new behavior and compatibility are maintained separately. Review migration instructions and test against staging before switching."
+  },
+  {
+    "id": "polaris-deploy",
+    "name": "Polaris",
+    "url": "https://polaris-deploy.com/",
+    "category": "deployment",
+    "description": "Desktop app for running Kamal deployments and reviewing containers, proxy routes, logs, and rollback candidates.",
+    "kind": "commercial",
+    "tags": [
+      "desktop",
+      "macos",
+      "linux"
+    ],
+    "link_checked_at": "2026-11-23",
+    "details": "Polaris opens an existing Kamal project and puts deploy commands, live output, Docker container state, kamal-proxy routes, request traffic, server metrics, and rollback candidates in one desktop interface. Native builds are available for macOS and Linux.",
+    "best_for": "You prefer a desktop UI to repeatedly switching between Kamal CLI, Docker commands, SSH logs, and proxy diagnostics.",
+    "caveat": "A paid license is needed for full deployment functionality; some features can be tried free. It operates your existing infrastructure rather than hosting apps."
   }
 ]

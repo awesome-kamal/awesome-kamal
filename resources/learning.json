@@ -28,5 +28,22 @@
     "details": "Supplemental community writing and operational examples outside the official docs.",
     "best_for": "You are looking for additional walkthroughs and alternative explanations.",
     "caveat": "Check article dates; older Kamal 1/MRSK examples may no longer apply."
+  },
+  {
+    "id": "kamal-deep-dive-rails-world-2026",
+    "name": "Kamal Deep Dive — Rails World 2026",
+    "url": "https://www.youtube.com/watch?v=CsWQD81i5-c",
+    "category": "learning",
+    "description": "Josef Strzibny explains what happens during a Kamal deployment, from SSH execution to multi-server routing and Kamal Proxy.",
+    "kind": "documentation",
+    "tags": [
+      "video",
+      "architecture",
+      "rails-world"
+    ],
+    "link_checked_at": "2026-11-23",
+    "details": "Recorded at Rails World 2026, this talk walks through Kamal's architecture and a deployment from start to finish, including how servers, registries, and Kamal Proxy fit together.",
+    "best_for": "You know the basic kamal deploy commands but want a deeper model of what happens on the servers and why.",
+    "caveat": "A conference presentation rather than a current configuration reference; verify exact flags and options against the documentation for your installed Kamal version."
   }
 ]

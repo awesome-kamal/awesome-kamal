@@ -190,6 +190,40 @@
       "caveat": "Maintained by Upstate, this directory's sponsor. Requires GitHub environments, SSH access, registry credentials, and secrets. New configurations start in manual mode until you review and activate automatic deployments."
     },
     {
+      "id": "dash",
+      "name": "Dash",
+      "url": "https://github.com/zoolutions/dash",
+      "category": "deployment",
+      "description": "Kamal-derived deployment CLI with additional proxy features such as load balancing, readiness gates, and traffic shaping.",
+      "kind": "open-source",
+      "tags": [
+        "cli",
+        "proxy",
+        "fork"
+      ],
+      "link_checked_at": "2026-11-23",
+      "details": "Dash is an independent fork of Kamal. It retains compatibility with existing Kamal deployments and configuration while introducing its own CLI and dash-proxy features, including multi-host load balancing and proxy routing options.",
+      "best_for": "You already deploy with Kamal but want to compare an actively developed fork focused on additional proxy and rollout capabilities.",
+      "caveat": "Dash is not the official Kamal CLI; new behavior and compatibility are maintained separately. Review migration instructions and test against staging before switching."
+    },
+    {
+      "id": "polaris-deploy",
+      "name": "Polaris",
+      "url": "https://polaris-deploy.com/",
+      "category": "deployment",
+      "description": "Desktop app for running Kamal deployments and reviewing containers, proxy routes, logs, and rollback candidates.",
+      "kind": "commercial",
+      "tags": [
+        "desktop",
+        "macos",
+        "linux"
+      ],
+      "link_checked_at": "2026-11-23",
+      "details": "Polaris opens an existing Kamal project and puts deploy commands, live output, Docker container state, kamal-proxy routes, request traffic, server metrics, and rollback candidates in one desktop interface. Native builds are available for macOS and Linux.",
+      "best_for": "You prefer a desktop UI to repeatedly switching between Kamal CLI, Docker commands, SSH logs, and proxy diagnostics.",
+      "caveat": "A paid license is needed for full deployment functionality; some features can be tried free. It operates your existing infrastructure rather than hosting apps."
+    },
+    {
       "id": "kamal-lint",
       "name": "kamal-lint",
       "url": "https://github.com/davafons/kamal-lint",
@@ -314,6 +348,41 @@
       "caveat": "Commercial sponsor of this directory; sponsorship does not affect inclusion or order."
     },
     {
+      "id": "kamal-ui",
+      "name": "kamal·ui",
+      "url": "https://github.com/ronaldlangeveld/kamal-ui",
+      "category": "operations",
+      "description": "Self-hosted Rails dashboard for Kamal containers, proxy routes, logs, resource metrics, and lifecycle actions.",
+      "kind": "open-source",
+      "tags": [
+        "dashboard",
+        "docker",
+        "self-hosted"
+      ],
+      "link_checked_at": "2026-11-23",
+      "details": "Reads live Kamal service, role, accessory, and kamal-proxy state from Docker through a restricted socket proxy. Includes CPU and memory history, container logs, proxy requests, orphaned-route cleanup, and audited lifecycle actions. A sample-data mode runs without Docker.",
+      "best_for": "You run several Kamal apps on a single VPS and want a local dashboard for container and proxy operations.",
+      "caveat": "Early beta with breaking changes possible; it can stop or remove containers and routes. Start on a noncritical host and review Docker access controls and backups."
+    },
+    {
+      "id": "kamal-watch",
+      "name": "Kamal Watch",
+      "url": "https://github.com/jefflunt/kamal-watch",
+      "category": "operations",
+      "description": "Go-based live dashboard for Kamal hosts, Docker containers, proxy routes, and logs over SSH.",
+      "kind": "open-source",
+      "tags": [
+        "monitoring",
+        "ssh",
+        "self-hosted",
+        "go"
+      ],
+      "link_checked_at": "2026-11-23",
+      "details": "Uses SSH access to gather container and host health, live resource metrics, kamal-proxy route and TLS state, deployment audit logs, and streaming container logs. No agent is installed on the application hosts.",
+      "best_for": "You want live status and logs from several Kamal hosts in a lightweight interface on your laptop or private network.",
+      "caveat": "Early alpha with no HTTP authentication. Do not expose it to the public internet; bind to localhost or a private VPN/network. Requires an SSH key with Docker access."
+    },
+    {
       "id": "kamal-ansible-manager",
       "name": "kamal-ansible-manager",
       "url": "https://github.com/guillaumebriday/kamal-ansible-manager",
@@ -404,6 +473,24 @@
       "details": "A more opinionated self-hosting interface built around pushing code to one Linux server.",
       "best_for": "You want to compare managed-feeling single-host delivery to running Kamal directly.",
       "caveat": "Its workflows are not identical to vanilla Kamal; evaluate the architecture first."
+    },
+    {
+      "id": "kamalcloud",
+      "name": "KamalCloud",
+      "url": "https://kamalcloud.com/",
+      "category": "infrastructure",
+      "description": "Hosted control plane for provisioning and operating Kamal servers in your own cloud account.",
+      "kind": "commercial",
+      "tags": [
+        "hosted",
+        "provisioning",
+        "security",
+        "backups"
+      ],
+      "link_checked_at": "2026-11-23",
+      "details": "Connects to Hetzner, DigitalOcean, AWS, or existing Linux servers to manage server setup, hardening, Kamal deployment environments, backups, patching, alerts, and operations. It writes standard Kamal destination configuration alongside your application checkout.",
+      "best_for": "You want help managing the servers and deployment environments around Kamal, without handing the underlying VMs to a PaaS.",
+      "caveat": "Paid hosted service that uses SSH and holds encrypted deployment keys and secrets. Server bills remain with your provider; evaluate the access and recovery model before connecting production infrastructure."
     },
     {
       "id": "kamalduo",
@@ -513,6 +600,24 @@
       "caveat": "This is an example application, not a reusable deployment tool."
     },
     {
+      "id": "rails-kamal-local-template",
+      "name": "Rails 8 + Kamal local deploy template",
+      "url": "https://github.com/HammerSpb/rails-template",
+      "category": "examples",
+      "description": "Rails 8 template with production and staging Kamal configs and a Dockerized Linux deployment target for local testing.",
+      "kind": "open-source",
+      "tags": [
+        "rails",
+        "template",
+        "testing",
+        "staging"
+      ],
+      "link_checked_at": "2026-11-23",
+      "details": "Provides a Rails 8 application, PostgreSQL as a Kamal accessory, two deployment environments, a local Docker registry, and a Linux SSH deployment-target container. It demonstrates production-like Kamal deploys before you point the configuration at a VPS.",
+      "best_for": "You want to practice Kamal 2 deployment and staging workflows locally without renting and configuring a remote machine first.",
+      "caveat": "The local deployment target shares the host Docker socket and requires some macOS shell, SSH, and registry setup. Treat the template as a learning reference, not hardened production infrastructure."
+    },
+    {
       "id": "kamal-manual",
       "name": "Kamal Handbook",
       "url": "https://kamalmanual.com/handbook/",
@@ -541,6 +646,23 @@
       "details": "Supplemental community writing and operational examples outside the official docs.",
       "best_for": "You are looking for additional walkthroughs and alternative explanations.",
       "caveat": "Check article dates; older Kamal 1/MRSK examples may no longer apply."
+    },
+    {
+      "id": "kamal-deep-dive-rails-world-2026",
+      "name": "Kamal Deep Dive — Rails World 2026",
+      "url": "https://www.youtube.com/watch?v=CsWQD81i5-c",
+      "category": "learning",
+      "description": "Josef Strzibny explains what happens during a Kamal deployment, from SSH execution to multi-server routing and Kamal Proxy.",
+      "kind": "documentation",
+      "tags": [
+        "video",
+        "architecture",
+        "rails-world"
+      ],
+      "link_checked_at": "2026-11-23",
+      "details": "Recorded at Rails World 2026, this talk walks through Kamal's architecture and a deployment from start to finish, including how servers, registries, and Kamal Proxy fit together.",
+      "best_for": "You know the basic kamal deploy commands but want a deeper model of what happens on the servers and why.",
+      "caveat": "A conference presentation rather than a current configuration reference; verify exact flags and options against the documentation for your installed Kamal version."
     }
   ]
 }

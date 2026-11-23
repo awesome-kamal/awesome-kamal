@@ -24,7 +24,7 @@ for(const group of c.categories){
  for(const r of c.resources.filter(x=>x.category===group.id))lines.push("- ["+r.name+"]("+r.url+") — "+r.description+(r.kind==='commercial'?' **(commercial)**':''));
  lines.push("");
 }
-lines.push("---","","Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Repository existence was checked on November 12, 2026, but functionality and compatibility have not been tested. Listings are not endorsements.","","Inspired by the original [awesome-kamal](https://github.com/anthonynsimon/awesome-kamal) directory. Catalog metadata is dedicated to the public domain under [CC0](LICENSE).","");
+lines.push("---","","Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Links are reviewed when added, but functionality and compatibility have not been independently tested. Listings are not endorsements.","","Inspired by the original [awesome-kamal](https://github.com/anthonynsimon/awesome-kamal) directory. Catalog metadata is dedicated to the public domain under [CC0](LICENSE).","");
 const artifacts=[['README.md',lines.join(String.fromCharCode(10))],['catalog.json',JSON.stringify(c,null,2)+String.fromCharCode(10)]];
 const check=process.argv.includes('--check');
 for(const [path,output] of artifacts){if(check){const current=await readFile(path,'utf8').catch(()=>null);if(current!==output)throw Error('Stale '+path+'; run npm run build');}else await writeFile(path,output);}

@@ -90,5 +90,23 @@
     "details": "A more opinionated self-hosting interface built around pushing code to one Linux server.",
     "best_for": "You want to compare managed-feeling single-host delivery to running Kamal directly.",
     "caveat": "Its workflows are not identical to vanilla Kamal; evaluate the architecture first."
+  },
+  {
+    "id": "kamalcloud",
+    "name": "KamalCloud",
+    "url": "https://kamalcloud.com/",
+    "category": "infrastructure",
+    "description": "Hosted control plane for provisioning and operating Kamal servers in your own cloud account.",
+    "kind": "commercial",
+    "tags": [
+      "hosted",
+      "provisioning",
+      "security",
+      "backups"
+    ],
+    "link_checked_at": "2026-11-23",
+    "details": "Connects to Hetzner, DigitalOcean, AWS, or existing Linux servers to manage server setup, hardening, Kamal deployment environments, backups, patching, alerts, and operations. It writes standard Kamal destination configuration alongside your application checkout.",
+    "best_for": "You want help managing the servers and deployment environments around Kamal, without handing the underlying VMs to a PaaS.",
+    "caveat": "Paid hosted service that uses SSH and holds encrypted deployment keys and secrets. Server bills remain with your provider; evaluate the access and recovery model before connecting production infrastructure."
   }
 ]
