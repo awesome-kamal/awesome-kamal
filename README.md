@@ -21,6 +21,8 @@ A community-curated directory of tools, guides, and resources for deploying and 
 - [Helmsman](https://github.com/JijoBose/Helmsman) — Local browser interface experiment for Kamal operations.
 - [Shipyrd](https://github.com/Shipyrd/shipyrd) — Team deployment dashboard fed by Kamal lifecycle hooks.
 - [kamal-autodeploy](https://github.com/Upstate-run/kamal-autodeploy) — Go CLI that generates CI-gated GitHub Actions workflows to deploy only the Kamal services affected by a change.
+- [Dash](https://github.com/zoolutions/dash) — Kamal-derived deployment CLI with additional proxy features such as load balancing, readiness gates, and traffic shaping.
+- [Polaris](https://polaris-deploy.com/) — Desktop app for running Kamal deployments and reviewing containers, proxy routes, logs, and rollback candidates. **(commercial)**
 
 ## Configuration
 
@@ -35,6 +37,8 @@ A community-curated directory of tools, guides, and resources for deploying and 
 - [Automated CrowdSec Kamal](https://github.com/muthuishere/automated-crowdsec-kamal) — Community integration of CrowdSec security tooling with Kamal.
 - [Shoestring](https://github.com/tachyurgy/shoestring) — Self-hosted observability that combines SSH snapshots with kamal-proxy request logs.
 - [Upstate](https://upstate.cloud/) — Hosted Kamal production visibility with deploy receipts, observer health checks, and alerts. **(commercial)**
+- [kamal·ui](https://github.com/ronaldlangeveld/kamal-ui) — Self-hosted Rails dashboard for Kamal containers, proxy routes, logs, resource metrics, and lifecycle actions.
+- [Kamal Watch](https://github.com/jefflunt/kamal-watch) — Go-based live dashboard for Kamal hosts, Docker containers, proxy routes, and logs over SSH.
 
 ## Infrastructure
 
@@ -44,6 +48,7 @@ A community-curated directory of tools, guides, and resources for deploying and 
 - [dsd-vps-kamal](https://github.com/janraasch/dsd-vps-kamal) — Django Simple Deploy plugin generating Kamal configuration for an existing VPS.
 - [shipyard](https://github.com/onancelabs/shipyard) — Opinionated Ansible, Tailscale, Cloudflare, and Caddy setup for Kamal hosting.
 - [Single Server](https://github.com/dvassallo/singleserver) — Single-server app delivery system incorporating Kamal, Docker, GitHub, and Cloudflare.
+- [KamalCloud](https://kamalcloud.com/) — Hosted control plane for provisioning and operating Kamal servers in your own cloud account. **(commercial)**
 
 ## Examples & recipes
 
@@ -54,11 +59,13 @@ A community-curated directory of tools, guides, and resources for deploying and 
 - [grimmory-kamal](https://github.com/eval/grimmory-kamal) — Kamal configuration example for a self-hosted library application.
 - [Embeddings inference accessory](https://github.com/marianposaceanu/mp-com-embeddings) — Example of an embeddings inference workload deployed alongside a Kamal app.
 - [django-emojivote](https://github.com/janraasch/django-emojivote) — Django sample application with deployment-related files.
+- [Rails 8 + Kamal local deploy template](https://github.com/HammerSpb/rails-template) — Rails 8 template with production and staging Kamal configs and a Dockerized Linux deployment target for local testing.
 
 ## Learning
 
 - [Kamal Handbook](https://kamalmanual.com/handbook/) — Long-form handbook for learning Kamal deployment and production operations. **(commercial)**
 - [Kamal Wiki](https://kamal.wiki/) — Independent Kamal documentation and practical tutorial collection.
+- [Kamal Deep Dive — Rails World 2026](https://www.youtube.com/watch?v=CsWQD81i5-c) — Josef Strzibny explains what happens during a Kamal deployment, from SSH execution to multi-server routing and Kamal Proxy.
 
 ---
 

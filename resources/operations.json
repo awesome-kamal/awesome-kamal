@@ -91,5 +91,40 @@
     "details": "Connects the signals from hosts, components, and deployments to help owners see whether their fleet is behaving as intended.",
     "best_for": "You manage several Kamal apps and want a single view of their operational health.",
     "caveat": "Commercial sponsor of this directory; sponsorship does not affect inclusion or order."
+  },
+  {
+    "id": "kamal-ui",
+    "name": "kamal·ui",
+    "url": "https://github.com/ronaldlangeveld/kamal-ui",
+    "category": "operations",
+    "description": "Self-hosted Rails dashboard for Kamal containers, proxy routes, logs, resource metrics, and lifecycle actions.",
+    "kind": "open-source",
+    "tags": [
+      "dashboard",
+      "docker",
+      "self-hosted"
+    ],
+    "link_checked_at": "2026-11-23",
+    "details": "Reads live Kamal service, role, accessory, and kamal-proxy state from Docker through a restricted socket proxy. Includes CPU and memory history, container logs, proxy requests, orphaned-route cleanup, and audited lifecycle actions. A sample-data mode runs without Docker.",
+    "best_for": "You run several Kamal apps on a single VPS and want a local dashboard for container and proxy operations.",
+    "caveat": "Early beta with breaking changes possible; it can stop or remove containers and routes. Start on a noncritical host and review Docker access controls and backups."
+  },
+  {
+    "id": "kamal-watch",
+    "name": "Kamal Watch",
+    "url": "https://github.com/jefflunt/kamal-watch",
+    "category": "operations",
+    "description": "Go-based live dashboard for Kamal hosts, Docker containers, proxy routes, and logs over SSH.",
+    "kind": "open-source",
+    "tags": [
+      "monitoring",
+      "ssh",
+      "self-hosted",
+      "go"
+    ],
+    "link_checked_at": "2026-11-23",
+    "details": "Uses SSH access to gather container and host health, live resource metrics, kamal-proxy route and TLS state, deployment audit logs, and streaming container logs. No agent is installed on the application hosts.",
+    "best_for": "You want live status and logs from several Kamal hosts in a lightweight interface on your laptop or private network.",
+    "caveat": "Early alpha with no HTTP authentication. Do not expose it to the public internet; bind to localhost or a private VPN/network. Requires an SSH key with Docker access."
   }
 ]
