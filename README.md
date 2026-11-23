@@ -69,6 +69,6 @@ A community-curated directory of tools, guides, and resources for deploying and 
 
 ---
 
-Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Repository existence was checked on November 12, 2026, but functionality and compatibility have not been tested. Listings are not endorsements.
+Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Links are reviewed when added, but functionality and compatibility have not been independently tested. Listings are not endorsements.
 
 Inspired by the original [awesome-kamal](https://github.com/anthonynsimon/awesome-kamal) directory. Catalog metadata is dedicated to the public domain under [CC0](LICENSE).
